@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import HeroCanvasClient from "@/components/HeroCanvasClient";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -7,6 +8,7 @@ import Reveal from "@/components/Reveal";
 const services = [
   {
     tag: "01",
+    slug: "3d-websites",
     title: "Interactive 3D Websites",
     price: "from $5k",
     desc: "Real-time WebGL experiences built with React Three Fiber — dispersion glass, particle fields, scroll-driven camera rigs. The kind of site that gets remembered.",
@@ -15,6 +17,7 @@ const services = [
   },
   {
     tag: "02",
+    slug: "ai-apps",
     title: "AI-Powered Apps",
     price: "from $3k",
     desc: "We ship production AI features — voice agents, RAG assistants, generative tools. Aura, our private AI interview coach, is live proof we build what we sell.",
@@ -23,6 +26,7 @@ const services = [
   },
   {
     tag: "03",
+    slug: "crm",
     title: "CRM & Internal Tools",
     price: "$1.5k + $299/mo",
     desc: "Lightweight, custom CRMs and dashboards that fit how you actually work — lead pipelines, automations, and reporting, managed for you.",
@@ -157,6 +161,12 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
+                  <Link
+                    href={`/services/${s.slug}`}
+                    className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-white underline-offset-4 hover:underline"
+                  >
+                    Learn more →
+                  </Link>
                 </div>
               </div>
             ))}
@@ -184,6 +194,12 @@ export default function Home() {
                 >
                   Visit aura.genosapp.com →
                 </a>
+                <Link
+                  href="/work/aura"
+                  className="mt-2 block text-sm font-medium text-[#7af0ff] underline-offset-4 hover:underline"
+                >
+                  Read the case study →
+                </Link>
               </div>
             </div>
 
