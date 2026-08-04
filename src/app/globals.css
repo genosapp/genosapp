@@ -189,3 +189,93 @@ html.lenis body {
     transform: none;
   }
 }
+
+/* Rendered markdown (insights posts) */
+.prose-genos {
+  color: #c3cbe8;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.prose-genos h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+}
+.prose-genos h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+.prose-genos p {
+  margin: 1.1rem 0;
+}
+.prose-genos a {
+  color: #7af0ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.prose-genos a:hover {
+  color: #fff;
+}
+.prose-genos strong {
+  color: #fff;
+  font-weight: 600;
+}
+.prose-genos ul,
+.prose-genos ol {
+  margin: 1.1rem 0;
+  padding-left: 1.4rem;
+}
+.prose-genos ul {
+  list-style: none;
+  padding-left: 0;
+}
+.prose-genos ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin: 0.55rem 0;
+}
+.prose-genos ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6d8bff;
+}
+.prose-genos ol {
+  list-style: decimal;
+}
+.prose-genos ol li {
+  margin: 0.55rem 0;
+  padding-left: 0.35rem;
+}
+.prose-genos ol li::marker {
+  color: #7af0ff;
+  font-weight: 600;
+}
+.prose-genos blockquote {
+  margin: 1.8rem 0;
+  padding: 1rem 1.4rem;
+  border-left: 3px solid #6d8bff;
+  background: rgba(109, 139, 255, 0.06);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #d7ddf2;
+}
+.prose-genos blockquote p {
+  margin: 0;
+}
+.prose-genos code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.9em;
+}

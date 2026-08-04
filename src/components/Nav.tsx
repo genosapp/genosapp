@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +39,7 @@ export default function Nav() {
         <div className="hidden items-center gap-8 text-sm text-[#b7c0e0] md:flex">
           <a href="#services" className="transition hover:text-white">Services</a>
           <a href="#work" className="transition hover:text-white">Work</a>
-          <a href="#aura" className="transition hover:text-white">Aura</a>
+          <Link href="/insights" className="transition hover:text-white">Insights</Link>
           <a href="#process" className="transition hover:text-white">Process</a>
         </div>
         <a

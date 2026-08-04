@@ -23,8 +23,8 @@ export default function SubNav() {
         <div className="hidden items-center gap-8 text-sm text-[#b7c0e0] md:flex">
           <Link href="/services" className="transition hover:text-white">Services</Link>
           <Link href="/work/aura" className="transition hover:text-white">Work</Link>
+          <Link href="/insights" className="transition hover:text-white">Insights</Link>
           <a href="https://aura.genosapp.com" className="transition hover:text-white">Aura</a>
-          <Link href="/#process" className="transition hover:text-white">Process</Link>
         </div>
         <Link href="/#contact" className="btn-primary rounded-xl px-4 py-2 text-sm font-medium">
           Book a build call
