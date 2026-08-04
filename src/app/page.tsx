@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import HeroCanvasClient from "@/components/HeroCanvasClient";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -321,7 +322,7 @@ export default function Home() {
         <footer className="relative z-10 border-t border-white/5 py-10">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-[#6b76a0] sm:flex-row">
             <div className="flex items-center gap-2">
-              <span className="inline-block h-5 w-5 rounded-md bg-gradient-to-br from-[#6d8bff] to-[#a06bff]" />
+              <Image src="/logo.jpg" alt="GenOS logo" width={20} height={20} className="h-5 w-5 rounded-md object-cover" />
               <span className="font-medium text-[#c3cbe8]">GenOS</span>
               <span>· AI-native product &amp; web studio</span>
             </div>

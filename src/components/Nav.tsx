@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,8 +24,15 @@ export default function Nav() {
           scrolled ? "glass shadow-lg shadow-black/30" : ""
         }`}
       >
-        <a href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="inline-block h-6 w-6 rounded-lg bg-gradient-to-br from-[#6d8bff] to-[#a06bff]" />
+        <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight">
+          <Image
+            src="/logo.jpg"
+            alt="GenOS logo"
+            width={32}
+            height={32}
+            priority
+            className="h-8 w-8 rounded-lg object-cover"
+          />
           <span className="text-lg">GenOS</span>
         </a>
         <div className="hidden items-center gap-8 text-sm text-[#b7c0e0] md:flex">

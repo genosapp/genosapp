@@ -28,12 +28,14 @@ export const metadata: Metadata = {
     url: "https://genosapp.com",
     siteName: "GenOS",
     type: "website",
+    images: [{ url: "/logo.jpg", width: 864, height: 768, alt: "GenOS" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GenOS — AI-native Product & Web Studio",
     description:
       "Interactive 3D web experiences, AI-powered apps, and CRMs.",
+    images: ["/logo.jpg"],
   },
 };
 
