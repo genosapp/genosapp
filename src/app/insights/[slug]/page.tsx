@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.updated,
     },
   };
 }
@@ -53,12 +54,16 @@ export default async function InsightPost({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated,
     url,
     author: { "@id": "https://genosapp.com/#organization" },
     publisher: { "@id": "https://genosapp.com/#organization" },
     keywords: post.keywords.join(", "),
     mainEntityOfPage: url,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "#insight-content p:first-of-type"],
+    },
   };
 
   const jsonLd =
@@ -105,6 +110,14 @@ export default async function InsightPost({ params }: Props) {
         <article className="mt-8">
           <div className="flex flex-wrap items-center gap-3 text-xs text-[#7c88b3]">
             <time dateTime={post.date}>{formatDate(post.date)}</time>
+            {post.updated !== post.date && (
+              <>
+                <span className="text-[#39406a]">·</span>
+                <span>
+                  Updated <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+                </span>
+              </>
+            )}
             <span className="text-[#39406a]">·</span>
             <span>{post.readingTime}</span>
             {post.tags.map((t) => (
@@ -122,6 +135,7 @@ export default async function InsightPost({ params }: Props) {
           </h1>
 
           <div
+            id="insight-content"
             className="prose-genos mt-10"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />

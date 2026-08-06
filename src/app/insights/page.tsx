@@ -44,6 +44,7 @@ export default function InsightsIndex() {
       headline: p.title,
       description: p.description,
       datePublished: p.date,
+      dateModified: p.updated,
       url: `${url}/${p.slug}`,
     })),
   };

@@ -11,7 +11,8 @@ export type PostMeta = {
   slug: string;
   title: string;
   description: string;
-  date: string; // ISO
+  date: string; // ISO — original publish date
+  updated: string; // ISO — last modified date (defaults to `date` if not set)
   readingTime: string;
   tags: string[];
   keywords: string[];
@@ -42,11 +43,15 @@ export function getPost(slug: string): Post | undefined {
   const raw = fs.readFileSync(file, "utf8");
   const { data, content } = matter(raw);
   const html = marked.parse(content) as string;
+  const dateIso = data.date
+    ? new Date(data.date).toISOString()
+    : new Date().toISOString();
   return {
     slug,
     title: data.title ?? slug,
     description: data.description ?? "",
-    date: data.date ? new Date(data.date).toISOString() : new Date().toISOString(),
+    date: dateIso,
+    updated: data.updated ? new Date(data.updated).toISOString() : dateIso,
     readingTime: estimateReadingTime(content),
     tags: Array.isArray(data.tags) ? data.tags : [],
     keywords: Array.isArray(data.keywords) ? data.keywords : [],

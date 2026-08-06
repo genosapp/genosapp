@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const insightPages: MetadataRoute.Sitemap = getAllPostMeta().map((p) => ({
     url: `${BASE}/insights/${p.slug}`,
-    lastModified: new Date(p.date),
+    lastModified: new Date(p.updated),
     changeFrequency: "monthly",
     priority: 0.7,
   }));
