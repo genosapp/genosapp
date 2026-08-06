@@ -47,8 +47,7 @@ export default async function InsightPost({ params }: Props) {
 
   const url = `https://genosapp.com/insights/${post.slug}`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const postNode = {
     "@type": "BlogPosting",
     "@id": `${url}#post`,
     headline: post.title,
@@ -61,6 +60,25 @@ export default async function InsightPost({ params }: Props) {
     keywords: post.keywords.join(", "),
     mainEntityOfPage: url,
   };
+
+  const jsonLd =
+    post.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@graph": [
+            postNode,
+            {
+              "@type": "FAQPage",
+              "@id": `${url}#faq`,
+              mainEntity: post.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+          ],
+        }
+      : { "@context": "https://schema.org", ...postNode };
 
   return (
     <div className="grain relative min-h-screen">
@@ -108,6 +126,27 @@ export default async function InsightPost({ params }: Props) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </article>
+
+        {post.faqs.length > 0 && (
+          <section className="mt-16">
+            <h2 className="text-2xl font-semibold sm:text-3xl">
+              Frequently asked questions
+            </h2>
+            <div className="mt-8 space-y-4">
+              {post.faqs.map((f) => (
+                <details key={f.q} className="glass group rounded-2xl p-6">
+                  <summary className="cursor-pointer list-none text-base font-medium text-white marker:hidden">
+                    <span className="flex items-center justify-between gap-4">
+                      {f.q}
+                      <span className="text-[#7af0ff] transition group-open:rotate-45">+</span>
+                    </span>
+                  </summary>
+                  <p className="mt-4 text-sm leading-relaxed text-[#a7b1d4]">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="glass mt-16 flex flex-col items-center gap-5 rounded-3xl p-10 text-center">
           <h2 className="text-2xl font-semibold">Have a project in mind?</h2>

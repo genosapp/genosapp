@@ -5,6 +5,8 @@ import { marked } from "marked";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "insights");
 
+export type Faq = { q: string; a: string };
+
 export type PostMeta = {
   slug: string;
   title: string;
@@ -13,6 +15,7 @@ export type PostMeta = {
   readingTime: string;
   tags: string[];
   keywords: string[];
+  faqs: Faq[];
 };
 
 export type Post = PostMeta & { html: string };
@@ -47,6 +50,11 @@ export function getPost(slug: string): Post | undefined {
     readingTime: estimateReadingTime(content),
     tags: Array.isArray(data.tags) ? data.tags : [],
     keywords: Array.isArray(data.keywords) ? data.keywords : [],
+    faqs: Array.isArray(data.faqs)
+      ? data.faqs.filter((f: unknown): f is Faq =>
+          Boolean(f && typeof f === "object" && "q" in f && "a" in f)
+        )
+      : [],
     html,
   };
 }
