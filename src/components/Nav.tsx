@@ -43,7 +43,9 @@ export default function Nav() {
           <a href="#process" className="transition hover:text-white">Process</a>
         </div>
         <a
-          href="/contact"
+          href="https://cal.com/genosapp/build-call"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn-primary rounded-xl px-4 py-2 text-sm font-medium"
         >
           Book a build call

@@ -26,9 +26,9 @@ export default function SubNav() {
           <Link href="/insights" className="transition hover:text-white">Insights</Link>
           <a href="https://aura.genosapp.com" className="transition hover:text-white">Aura</a>
         </div>
-        <Link href="/contact" className="btn-primary rounded-xl px-4 py-2 text-sm font-medium">
+        <a href="https://cal.com/genosapp/build-call" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-xl px-4 py-2 text-sm font-medium">
           Book a build call
-        </Link>
+        </a>
       </nav>
     </header>
   );
