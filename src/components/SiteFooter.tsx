@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <Link href="/services/crm" className="hover:text-white">CRM &amp; Tools</Link>
           <Link href="/work/aura" className="hover:text-white">Aura Case Study</Link>
           <Link href="/insights" className="hover:text-white">Insights</Link>
-          <a href="mailto:connect@genosapp.com" className="hover:text-white">Contact</a>
+          <a href="/contact" className="hover:text-white">Contact</a>
         </div>
         <div>© {new Date().getFullYear()} GenOS</div>
       </div>

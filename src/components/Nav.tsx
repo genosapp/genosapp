@@ -43,7 +43,7 @@ export default function Nav() {
           <a href="#process" className="transition hover:text-white">Process</a>
         </div>
         <a
-          href="#contact"
+          href="/contact"
           className="btn-primary rounded-xl px-4 py-2 text-sm font-medium"
         >
           Book a build call
