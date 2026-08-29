@@ -38,7 +38,9 @@ Three things move the number:
 
 ## When 3D is worth it (and when it isn't)
 
-3D is worth it when **being remembered is the point** — a product launch, a premium brand, a portfolio that has to out-class competitors. It is *not* worth it for a page whose only job is to rank for a keyword and convert on price. Use the right tool for the job.
+3D is worth it when **being remembered is the point** — a product launch, a premium brand, a portfolio that has to out-class competitors. It is *not* worth it for a page whose only job is to rank for a keyword and convert on price. Use the right tool for the job. (We go deeper on this in [3D Website vs. Normal Website: Does It Actually Convert Better?](/insights/3d-website-vs-normal-website-conversion).)
+
+If you're curious about the technical side — whether to use React Three Fiber or plain Three.js — we covered that in [React Three Fiber vs. Plain Three.js](/insights/react-three-fiber-vs-threejs). And if you want to understand what adding 3D to an existing site looks like in practice, see [How to Add 3D to Your Website](/insights/how-to-add-3d-to-website).
 
 ## How we keep it predictable
 

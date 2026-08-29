@@ -45,4 +45,6 @@ A focused, single-feature AI app — one clear use case, wired into your existin
 
 That's the shape of our own AI App Sprint — a fixed **2–4 week** timeline because the scope is fixed going in. Add more features or a bigger product surface, and the timeline extends proportionally, not exponentially — good scoping keeps later features faster, not slower.
 
+For the cost side of this equation, see [How Much Does It Cost to Build an AI App in 2026?](/insights/ai-app-development-cost-2026). And if you're deciding whether to build or buy, our [Custom AI App vs. Off-the-Shelf](/insights/custom-ai-app-vs-off-the-shelf) guide covers that framework.
+
 > Want a real timeline for your project instead of a guess? [Book a 30-minute call](/#contact) and we'll scope it before you commit to anything.

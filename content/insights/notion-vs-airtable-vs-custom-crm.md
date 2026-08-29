@@ -44,4 +44,6 @@ Airtable is the honest middle ground. It handles multi-user pipelines, basic aut
 
 At GenOS, a **GenOS CRM Setup** starts at **$1,500** plus **$299/month**, live in 1–2 weeks — built on your exact pipeline, not a generic template. That's the point where custom stops being a luxury and starts being cheaper than the SaaS stack you'd otherwise be paying for indefinitely.
 
+If you're earlier in the journey — still using spreadsheets — see [CRM vs. Spreadsheet: When to Stop Using Google Sheets for Sales](/insights/crm-vs-spreadsheet-small-business) for a clear decision framework.
+
 > Not sure which tier you're at? [Book a 30-minute call](/#contact) and we'll tell you honestly if you even need custom yet.

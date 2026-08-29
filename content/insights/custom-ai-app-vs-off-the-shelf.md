@@ -44,4 +44,6 @@ You don't have to pick a side. The smart move is often: buy the commodity layers
 
 It isn't "build or buy." It's *"where is AI actually a differentiator for us, versus a convenience?"* Spend custom-build budget on the differentiators. Buy the conveniences.
 
+If you're trying to budget for the custom side, see [How Much Does It Cost to Build an AI App in 2026?](/insights/ai-app-development-cost-2026). And if voice AI is part of the picture, our [AI Voice Agent Platforms guide](/insights/ai-voice-agent-platforms-2026) covers the build-vs-buy landscape there too.
+
 > Not sure which side your use case falls on? [Book a 30-minute call](/#contact) — we'll tell you honestly, even when the answer is "just buy the tool."

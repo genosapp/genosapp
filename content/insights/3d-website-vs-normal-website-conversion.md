@@ -44,4 +44,6 @@ If your page's only job is to rank for a keyword and convert cold traffic on pri
 
 Ask: is this page selling on **price and speed**, or on **being remembered**? If it's the first, build fast and simple. If it's the second — and for premium brands, funded startups, and considered-purchase B2B, it usually is — a 3D experience is one of the few things that actually differentiates.
 
+Ready to put numbers to it? See [How Much Does a 3D Website Cost in 2026?](/insights/3d-website-cost-2026) for a straight pricing breakdown. And if you're exploring how to add 3D to an existing site without rebuilding from scratch, we wrote a guide on [How to Add 3D to Your Website](/insights/how-to-add-3d-to-website).
+
 > Not sure if 3D fits your goals? [Book a 30-minute call](/#contact) — we'll tell you honestly if a normal website is the smarter move.
