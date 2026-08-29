@@ -2,6 +2,9 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { registerSections, updateScroll } from "@/lib/scrollProgress";
+
+const SECTION_IDS = ["top", "services", "work", "aura", "process", "contact"];
 
 export default function SmoothScroll({
   children,
@@ -9,15 +12,31 @@ export default function SmoothScroll({
   children: React.ReactNode;
 }) {
   useEffect(() => {
+    const unregister = registerSections(SECTION_IDS);
+    // Seed initial state before any scroll event fires.
+    updateScroll(window.scrollY);
+
     const reduce = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (reduce) return;
+
+    if (reduce) {
+      const onScroll = () => updateScroll(window.scrollY);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => {
+        window.removeEventListener("scroll", onScroll);
+        unregister();
+      };
+    }
 
     const lenis = new Lenis({
       duration: 1.15,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
+    });
+
+    lenis.on("scroll", ({ scroll }: { scroll: number }) => {
+      updateScroll(scroll);
     });
 
     let raf = 0;
@@ -30,6 +49,7 @@ export default function SmoothScroll({
     return () => {
       cancelAnimationFrame(raf);
       lenis.destroy();
+      unregister();
     };
   }, []);
 

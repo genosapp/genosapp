@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
-import HeroCanvasClient from "@/components/HeroCanvasClient";
+import ScrollSceneClient from "@/components/ScrollSceneClient";
 import SmoothScroll from "@/components/SmoothScroll";
 import Reveal from "@/components/Reveal";
 
@@ -57,6 +57,11 @@ export default function Home() {
           <span className="a3" />
         </div>
 
+        {/* Persistent scroll-driven 3D canvas — spans the entire page, not
+            just the hero. Camera + per-section 3D objects react to scroll
+            progress (see lib/scrollProgress.ts + components/ScrollScene.tsx). */}
+        <ScrollSceneClient />
+
         <Reveal />
         <Nav />
 
@@ -78,7 +83,6 @@ export default function Home() {
           id="top"
           className="relative flex min-h-screen items-center overflow-hidden"
         >
-          <HeroCanvasClient />
           <div className="relative z-10 mx-auto w-full max-w-6xl px-6">
             <div className="max-w-2xl">
               <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-[#b7c0e0]">

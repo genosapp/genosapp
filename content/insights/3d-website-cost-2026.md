@@ -9,6 +9,15 @@ keywords:
   - "React Three Fiber pricing"
   - "WebGL website price"
   - "interactive website cost"
+faqs:
+  - q: "How much does a 3D website cost in 2026?"
+    a: "A production-grade interactive 3D website typically costs $5,000–$12,000 for a landing experience. At GenOS, 3D Hero Sites start at $5,000 with a fixed scope and 2–4 week timeline."
+  - q: "Is a 3D website more expensive than a regular website?"
+    a: "Yes — custom shader work, scroll choreography, and performance engineering add cost over a standard site. But for brands where being remembered matters more than being cheapest, the ROI justifies it."
+  - q: "What makes 3D website costs vary so much?"
+    a: "Three things: custom shader complexity (signature effects vs. off-the-shelf), scroll-driven motion design, and performance engineering for mobile and low-end devices."
+  - q: "Can I get a fixed price for a 3D website?"
+    a: "Yes. At GenOS we scope the outcome on a 30-minute call and give you a fixed price before any production code is written — no hourly billing, no surprises."
 ---
 
 Every week someone asks us the same question: *"What does a 3D website actually cost?"* Most agencies dodge it with "it depends." Here's a straight answer.

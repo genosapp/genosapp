@@ -1,0 +1,36 @@
+🚀 *GenOS — What We Build & Run For You*
+
+We're a full-stack digital studio: we design, build, market, and manage your online presence end-to-end.
+
+*🔹 GenOS Development Services*
+
+1️⃣ *Interactive 3D Websites*
+Real-time WebGL experiences (React Three Fiber, Three.js, custom shaders) — the kind of site people remember. 60fps, mobile-safe fallbacks.
+💰 From $5,000 | ⏱ 2–4 weeks
+
+2️⃣ *AI-Powered App Development*
+Voice agents, RAG assistants, and generative AI features built on OpenAI/Anthropic — production-grade, not demos. (Aura, our own AI interview coach, is live proof.)
+💰 From $3,000 | ⏱ 2–4 weeks
+
+3️⃣ *Custom CRM & Internal Tools*
+Lightweight CRMs and dashboards built around your real workflow — pipelines, automations, reporting. Fully managed, hosted by us.
+💰 $1,500 setup + $299/mo | ⏱ 1–2 weeks
+
+*🔹 Growth & Marketing Services*
+
+4️⃣ *Digital Marketing — Meta Ads Management*
+Facebook & Instagram ad campaigns built, launched, and optimized for leads/sales — audience targeting, creative testing, daily monitoring, and monthly performance reports.
+💰 Custom quote based on ad spend & goals
+
+5️⃣ *SEO (Search Engine Optimization)*
+On-page + technical SEO, keyword-targeted content, schema markup, and ongoing optimization to get you found on Google — the exact system we use on our own site.
+💰 Custom quote based on scope
+
+6️⃣ *Zoho Setup & Process Automation*
+End-to-end Zoho setup (Mail, CRM, Books, workflows) configured around how your business actually runs — DNS, domains, automations, and staff onboarding included.
+💰 Custom quote based on modules needed
+
+---
+📩 Reply here or WhatsApp us to discuss which service fits you best — we'll scope it on a quick call and give you a fixed quote.
+
+*GenOS* | connect@genosapp.com | genosapp.com

@@ -9,6 +9,15 @@ keywords:
   - "custom AI development"
   - "AI app development cost"
   - "when to build custom AI"
+faqs:
+  - q: "When should I build a custom AI app instead of buying a tool?"
+    a: "Build custom when your data can't leave your control, your workflow is your competitive edge, per-seat pricing is eating your budget, or you need deep integration with your exact stack."
+  - q: "How much does a custom AI app cost compared to SaaS?"
+    a: "A focused custom AI feature starts around $3,000 as a one-time build. SaaS tools run $30–500/month per user indefinitely. Past a certain team size or usage level, custom is cheaper long-term."
+  - q: "Can I use off-the-shelf AI and custom AI together?"
+    a: "Yes — the smart move is often to buy the commodity layers and build only the one differentiated feature that no off-the-shelf tool handles well."
+  - q: "How long does it take to build a custom AI app?"
+    a: "A single production AI feature ships in 2–4 weeks with a fixed-scope sprint. A full AI product with multiple features runs 2–4 months."
 ---
 
 The AI tool market is flooded. For almost any workflow there's a SaaS product that does *something* close to what you need. So when is it worth building a [custom AI app](/services/ai-apps) instead of just buying one?
